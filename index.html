@@ -1,176 +1,305 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>EI EI MON</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>EI EI MON</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+			/* Custom styles for color and layout */
+			/* Custom styles for color and layout */
+            body {
+                color: #333;
+                background-color: #f5f5f5;
+                padding-top: 50px; /* Adjust space above menu bar */
+                font-size: 14px; /* Reduced base font size */
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+            header#header {
+                background-color: #4a4a4a;
+                color: #fff;
+            }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h2>For me, every day is a learning day.</h2>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+            nav#nav ul.links li a {
+                color: #fff;
+            }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Home</a>
+            nav#nav ul.icons li a {
+                color: #fff;
+            }
+
+            section.post {
+                background-color: #ffffff;
+                border-radius: 8px;
+                padding: 15px; /* Reduced padding */
+                margin-bottom: 15px; /* Reduced margin */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                font-size: 15px; /* Reduced font size for section text */
+            }
+
+            .button {
+                background-color: #dfe7f0;
+                color: #333;
+                padding: 8px 15px; /* Reduced padding */
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 14px; /* Reduced font size */
+            }
+
+            .button:hover {
+                background-color: #a3b1c4;
+            }
+
+            .button.large {
+                font-size: 1.1em; /* Reduced large button font size */
+            }
+
+            .back-home-link {
+                color: #333;
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 14px; /* Reduced font size */
+            }
+
+            .sub-section {
+                margin-top: 15px; /* Reduced margin */
+                padding-left: 15px; /* Reduced padding */
+            }
+
+            .sub-section h3 {
+                margin-top: 0;
+                font-size: 16px; /* Reduced heading font size */
+                text-align: left; /* Aligning sub-section headings to left */
+            }
+
+            /* Adjust font sizes for headers */
+            header.major h2,
+            section h2 {
+                font-size: 15px; /* Reduced font size for section headings */
+                text-align: left; /* Aligning section headings to left */
+            }
+
+            section p {
+                text-align: justify; /* Justifying paragraphs */
+                font-size: 15px; /* Adjusted font size for all paragraphs */
+            }
+
+            #bio p {
+                text-align: justify; /* Justifying bio section paragraphs */
+                font-size: 15px; /* Adjusted font size for bio section paragraphs */
+            }
+
+
+
+		</style>		
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+
+            <!-- Header -->
+            <header id="header">
+                <!-- Header content can go here if needed -->
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="#bio" class="scrolly">Bio</a></li>
+                    <li><a href="#education" class="scrolly">Education</a></li>
+                    <li><a href="#publications" class="scrolly">Publications</a></li>
+                    <li><a href="#work-experience" class="scrolly">Work Experience</a></li> <!-- Added Work Experience -->
+                    <li><a href="#certifications" class="scrolly">Certifications</a></li>
+                    <li><a href="#awards" class="scrolly">Awards</a></li>
+                    <li><a href="#projects" class="scrolly">Projects</a></li> <!-- Projects at the end -->
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://github.com/EEM0N" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+
+            <!-- Main -->
+            <div id="main">
+
+                <!-- Bio Section -->
+                <!-- Bio Section -->
+                <section id="bio" class="post">
+                    <header class="major">
+                        <h2>About Me</h2>
+                        <div style="display: flex; align-items: center;">
+                            <img src="images/eem.jpg" alt="Bio Photo" style="width: 250px; height: auto; margin-right: 20px;">
+                            <div>
+                                <p>Currently, I am working as a Postdoctoral Researcher at the Wireless and Future Internet Unit within the Department of Electrical Engineering at Chulalongkorn University. My primary focus is on road traffic data analysis and traffic signal control. In this role, I investigate advanced methodologies for analyzing urban traffic patterns, optimizing traffic signal timings, and developing intelligent transportation systems. My research aims to improve traffic flow, reduce congestion, and enhance the efficiency of urban mobility through data-driven insights and innovative control strategies. Additionally, I am dedicated to addressing environmental concerns by working on projects aimed at reducing greenhouse gas emissions associated with traffic. By integrating sustainable practices into traffic management, we strive to create a more environmentally friendly and efficient transportation network.</p>
+                                <p>Feel free to explore my work on this page!</p>
+                            </div>
+                        </div>
+                    </header>
+                    <a href="#header" class="back-home-link">Back to Home</a>
+                </section>
+
+                <!-- Education Section -->
+                <section id="education" class="post">
+                    <header class="major">
+                        <h2>Education</h2>
+                    </header>
+                    <p>Below is a summary of my educational background:</p>
+                    <ul style="text-align: left;">
+                        <li><strong>Ph.D. in Electrical Engineering</strong> - Chulalongkorn University, Bangkok, Thailand (2020)</li>
+                        <li><strong>Master of Computer Science (M.C.Sc)</strong> - University of Computer Studies (Mandalay), Myanmar (2009)</li>
+                        <li><strong>Bachelor of Computer Science (B.C.Sc, Hons)</strong> - University of Computer Studies (Mandalay), Myanmar (2005)</li>
+                        <li><strong>Bachelor of Computer Science (B.C.Sc)</strong> - University of Computer Studies (Mandalay), Myanmar (2004)</li>
+                    </ul>
+                    <a href="#header" class="back-home-link">Back to Home</a>
+                </section>
+
+                <!-- Publications Section -->
+                <section id="publications" class="post">
+                    <header class="major">
+                        <h2>Publications</h2>
+                    </header>
+                    <ul style="text-align: left;">
+						<li>Ei Ei Mon, Myint Myint Thein, and May Thu Aung. "Clustering Based on Task Dependency for Data-Intensive Workflow Scheduling Optimization." 2016 9th Workshop on Many-Task Computing on Clouds, Grids, and Supercomputers (MTAGS). IEEE, 2016.[<a href="https://ieeexplore.ieee.org/abstract/document/7836551">pdf</a>]</li>
+                        <li>Ei Ei Mon, H. Ochiai, C. Saivichit, and C. Aswakul. (2019, June). "Traffic Anomaly Classification by Support Vector Machine with Radial Basis Function on Chula-SSS Urban Road Network." In Proceedings of 9th International Workshop on Computer Science and Engineering, WCSE (pp. 15-17).[<a href="http://www.wcse.org/WCSE_2019_SPRING/W1013.pdf">pdf</a>]</li>
+                        <li>Ei Ei Mon, H. Ochiai, C. Saivichit, and C. Aswakul. (2019, August). "Recurrent and Non-Recurrent Congestion Based Gridlock Detection on Chula-SSS Urban Road Network." In SUMO (pp. 158-171).[<a href="https://mail.easychair.org/publications/download/vxbj">pdf</a>, <a href="https://www.dlr.de/ts/en/PortalData/16/Resources/veranstaltungen/2019/EiEiMon_SUMO_USER_CONFERENCE_2019.pdf">slide</a>]</li>
+                        <li>Ei Ei Mon, H. Ochiai, C. Saivichit, and C. Aswakul. (2020). "Bottleneck Based Gridlock Prediction in an Urban Road Network Using Long Short-Term Memory." Electronics, 9(9), 1412.[<a href="https://www.mdpi.com/2079-9292/9/9/1412/pdf">pdf</a>]</li>
+                        <li>C. Eosanurak, N. Wongtrakoon, Ei Ei Mon, and C. Aswakul. (2020). "Computer Simulation Study of Vehicle Type Classification Using Machine Learning Techniques with Mobile Phone Location Data." In SUMO User Conference.[<a href="https://sumo.dlr.de/2020/SUMO2020_paper_33.pdf">pdf</a>, <a href="https://www.youtube.com/watch?v=DGB9iqq-maE">presentation</a>]</li>
+						<li>T. Konghun, N. Visavarungroj, K. Saengkaenpetch, M. Homchan, Ei Ei Mon, and C. Aswakul. (2022, January). "IoTcloudServe@ TEIN Establishment of Kubernetes Cloud for Road Traffic Signal Control Application Using Reinforcement Learning." In The 14th Regional Conference on Electrical and Electronics Engineering (RC-EEE 2021) (p. 116).[<a href="https://www.researchgate.net/profile/D-Mandal/publication/365098606_rc-eee2021-proceeding-2022M3-18/links/637711c11766b34c5433bf5d/rc-eee2021-proceeding-2022M3-18.pdf#page=127">pdf</a>]</li>
+						<li>Ei Ei Mon, H. Ochiai, P. Komolkiti, and C. Aswakul. (2022). "Real-World Sensor Dataset for City Inbound-Outbound Critical Intersection Analysis." Scientific Data, 9(1), 357. [<a href="https://www.nature.com/articles/s41597-022-01448-6">pdf</a>, <a href="https://github.com/EEM0N/sathorndata.github.io/blob/main/sathorndata.ipynb">code</a>, <a href="https://figshare.com/s/bef59df012778be4415d">dataset</a>]</li>
+						<li>Ei Ei Mon, H. Ochiai, and C. Aswakul. (2024). "Application of Traffic Light Control in Oversaturated Urban Network Using Multi-Agent Deep Reinforcement Learning." IEEE Access.[<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10521498">pdf</a>]</li>
+                    </ul>
+                    <a href="#header" class="back-home-link">Back to Home</a>
+                </section>
+
+                <!-- Certifications Section -->
+				<section id="certifications" class="post">
+					<header class="major">
+						<h2>Certifications</h2>
 					</header>
+					<p>Here is a list of certifications I have obtained:</p>
+					<ul style="text-align: left;">
+						<li><strong>Diploma in Java Programming Course</strong> - (May-Oct 2011)</li>
+						<li><strong>Associate HCTA0-003</strong> - (June 2024)</li>
+						<li><strong>Certified Kubernetes Administrator (CKA)</strong> - (July 2024)</li>
+					</ul>
+					<a href="#header" class="back-home-link">Back to Home</a>
+				</section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Research works</a></li>
-							<li><a href="generic.html">interested works</a></li>
-							<!--<li><a href="elements.html">Elements Reference</a></li>-->
-						</ul>
-						<ul class="icons">
-							<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
-							<li><a href="https://github.com/EEM0N" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+                <!-- Awards Section -->
+                <section id="awards" class="post">
+					<header class="major">
+						<h2>Awards</h2>
+					</header>
+					<p>Below are some of the awards and recognitions I have received:</p>
+					<ul style="text-align: left;">
+						<li><strong>PhD Sandwich Program AUN/SEED-Net Scholarship, JICA</strong> - 2017-2020</li>
+                        <li><strong>Short-Term Study Program in Japan (SSJP), University of Tokyo</strong>- 2019</li>
+                        <li><strong>Second Century Fund (C2F) Postdoctoral Fellowship, Chulalongkorn University, Thailand</strong> - 2022</li>
+					</ul>
+					<a href="#header" class="back-home-link">Back to Home</a>
+				</section>
 
-				<!-- Main -->
-					<div id="main">
+                <!-- Work Experience Section -->
+                <section id="work-experience" class="post">
+                    <header class="major">
+                        <h2>Work Experience</h2>
+                    </header>
+                    <ul style="text-align: left;">
+                        <li><strong>Former Tutor</strong>, Computer University (Taunggyi), 2007 - 2009</li>
+                        <li><strong>Former Assistant Lecturer</strong>, Computer University (Mandalay), 2009 - 2012</li>
+                        <li><strong>Former Assistant Lecturer</strong>, India-Myanmar Centre for Enhancement of Information Technology Skills (IMCEITS), Information and Communication Technology Research Centre (ICTRC), 2012 - 2015</li>
+                        <li><strong>Former Lecturer</strong>, University of Computer Studies (Mandalay), 2015 - 2017</li>
+                    </ul>
+                    <a href="#header" class="back-home-link">Back to Home</a>
+                </section>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<!--<span class="date">April 25, 2017</span>-->
-									<!--<h3>Research works</h3>-->
-									<p style="font-weight: bold;">I am a member of smart mobility team at Chulalongkorn University, Bangkok, Thailand. Here, you can find my research works during my Ph.D study.
-										I have published following international conference papers and articles.</p>
-									<ul>
-										<li>TRAFFIC ANOMALY CLASSIFICATION BY SUPPORT VECTOR MACHINE WITH RADIAL BASIS FUNCTION ON CHULA-SSS URBAN ROAD NETWORK<br>[
-											<a href="http://www.wcse.org/WCSE_2019_SPRING/W1013.pdf">pdf</a>]
-										</li>
-										<li>Recurrent and Non-recurrent Congestion Based Gridlock Detection on Chula-SSS Urban Road Network<br>[
-											<a href="https://mail.easychair.org/publications/download/vxbj">pdf</a>,
-											<a href="https://www.dlr.de/ts/en/PortalData/16/Resources/veranstaltungen/2019/EiEiMon_SUMO_USER_CONFERENCE_2019.pdf">slide</a>]
-										</li>
-										<li>Bottleneck Based Gridlock Prediction in an Urban Road Network Using Long Short-Term Memory<br>[
-											<a href="https://www.mdpi.com/2079-9292/9/9/1412/pdf">pdf</a>]
-										</li>
-										<li>Computer Simulation Study of Vehicle Type Classification Using Machine Learning Techniques with Mobile Phone Location Data<br>[
-											<a href="https://sumo.dlr.de/2020/SUMO2020_paper_33.pdf">pdf</a>,
-											<a href="https://www.youtube.com/watch?v=DGB9iqq-maE">presentation</a>]
-										</li>																				
-									</ul>
-									<p style="font-weight: bold;">For the above works, I used Chula-SSS dataset (<a href="https://github.com/SathornModel/Chula-SSS">download</a>). 
-									This dataset is calibrated using Simulation of Urban MObility (<a href="https://www.eclipse.org/sumo/">SUMO</a>).
-									I have tried to analyse real-world sensor data as well. It is part of Sathorn Model Project. (<a href="https://www.eng.chula.ac.th/en/20655">check here</a>) We have published following article and dataset.</p>
-									<ul>
-										<li>Real-world sensor dataset for city inbound-outbound critical intersection analysis<br>[
-											<a href="https://www.nature.com/articles/s41597-022-01448-6">pdf</a>,<a href="https://github.com/EEM0N/sathorndata.github.io/blob/main/sathorndata.ipynb">code</a>,
-											<a href="https://figshare.com/s/bef59df012778be4415d">dataset</a>]
-										</li>
-									</ul>
-									<p style="font-weight: bold;">I have uploaded my code in our github.(<a href="https://github.com/EEM0N/Smart-Mobility-Chula">check here</a>)</p>							
-								</header>
-								<a href="#" class="image main"><img src="images/Picture1.jpg" alt="image" />Source Image: www.google.com
-</a>
-								<ul class="actions special">
-									<li><a href="index.html" class="button large">Full Story</a></li>
-								</ul>
-							</article>
+                <!-- Volunteer Experience Section -->
+                <section id="volunteer" class="post">
+                    <header class="major">
+                        <h2>Volunteer Experience</h2>
+                    </header>
+                    <ul style="text-align: left;">
+                        <li><strong>Electrical Engineering Postgraduate Student Association (EEPSA)</strong> - Actively involved in activities to support the community.</li>
+                        <li><strong>The Mirror Foundation</strong> - Participated as a one-day volunteer, contributing to community service initiatives.</li>                    
+                    </ul>
+                    <a href="#header" class="back-home-link">Back to Home</a>
+                </section>
 
-						
+                <!-- Projects Section -->
+                <section id="projects" class="post">
+                    <header class="major">
+                        <h2>Explore My Projects</h2>
+                    </header>
+                    <p>
+                        <a href="https://github.com/EEM0N" class="icon brands alt fa-github" style="font-size: 48px;">
+                            <span class="label">GitHub</span>
+                        </a>
+                    </p>
+                    <a href="#header" class="back-home-link">Back to Home</a>
+                </section>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<!--<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>-->
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+            </div>
 
-					</div>
+            <!-- Footer -->
+            <footer id="footer">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section class="split contact">
+                    <section class="alt">
+                        <h3>Address</h3>
+                        <p>Bangkok, Thailand</p>
+                    </section>
+                    <section>
+                        <h3>Phone</h3>
+                        <p><a href="#"></a></p>
+                    </section>
+                    <section>
+                        <h3>Email</h3>
+                        <p>eieimonimceits@gmail.com</p>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="https://github.com/EEM0N" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Bangkok, Thailand</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#"></a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#"></a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
-									<li><a href="https://github.com/EEM0N" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        </div>
 
-				<!-- Copyright -->
-					<!--<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>-->
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </body>
 </html>
